@@ -22,3 +22,24 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+function add_staff_options( $wp_customize ) {
+    global $preschool_and_kindergarten_options_posts;
+    $wp_customize->add_setting(
+        'preschool_and_kindergarten_staff_post_four',
+        array(
+            'default' => '',
+            'sanitize_callback' => 'preschool_and_kindergarten_sanitize_select',
+        )
+    );
+    
+    $wp_customize->add_control(
+        'preschool_and_kindergarten_staff_post_four',
+        array(
+            'label' => __( 'Select Post One', 'preschool-and-kindergarten' ),
+            'section' => 'preschool_and_kindergarten_staff_settings',
+            'type' => 'select',
+            'choices' => $preschool_and_kindergarten_options_posts,
+        )
+    );
+}
+add_action( 'customize_register', 'add_staff_options' );
