@@ -15,7 +15,7 @@ $description   = get_theme_mod('preschool_and_kindergarten_news_section_descript
 		    
 		    $news_qry = new WP_Query(array(
 		    	    'posts_per_page' => 3,
-					'post_type' => 'post',
+					// 'post_type' => 'post',
 					'category_name' => 'news,events',
 					'ignore_sticky_posts' => true,
 		    	));
