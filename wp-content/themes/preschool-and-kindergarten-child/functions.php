@@ -35,7 +35,75 @@ function add_staff_options( $wp_customize ) {
     $wp_customize->add_control(
         'preschool_and_kindergarten_staff_post_four',
         array(
-            'label' => __( 'Select Post One', 'preschool-and-kindergarten' ),
+            'label' => __( 'Select Post Four', 'preschool-and-kindergarten' ),
+            'section' => 'preschool_and_kindergarten_staff_settings',
+            'type' => 'select',
+            'choices' => $preschool_and_kindergarten_options_posts,
+        )
+    );
+    $wp_customize->add_setting(
+        'preschool_and_kindergarten_staff_post_five',
+        array(
+            'default' => '',
+            'sanitize_callback' => 'preschool_and_kindergarten_sanitize_select',
+        )
+    );
+    
+    $wp_customize->add_control(
+        'preschool_and_kindergarten_staff_post_five',
+        array(
+            'label' => __( 'Select Post Five', 'preschool-and-kindergarten' ),
+            'section' => 'preschool_and_kindergarten_staff_settings',
+            'type' => 'select',
+            'choices' => $preschool_and_kindergarten_options_posts,
+        )
+    );
+    $wp_customize->add_setting(
+        'preschool_and_kindergarten_staff_post_six',
+        array(
+            'default' => '',
+            'sanitize_callback' => 'preschool_and_kindergarten_sanitize_select',
+        )
+    );
+    
+    $wp_customize->add_control(
+        'preschool_and_kindergarten_staff_post_six',
+        array(
+            'label' => __( 'Select Post Six', 'preschool-and-kindergarten' ),
+            'section' => 'preschool_and_kindergarten_staff_settings',
+            'type' => 'select',
+            'choices' => $preschool_and_kindergarten_options_posts,
+        )
+    );
+    $wp_customize->add_setting(
+        'preschool_and_kindergarten_staff_post_seven',
+        array(
+            'default' => '',
+            'sanitize_callback' => 'preschool_and_kindergarten_sanitize_select',
+        )
+    );
+    
+    $wp_customize->add_control(
+        'preschool_and_kindergarten_staff_post_seven',
+        array(
+            'label' => __( 'Select Post Seven', 'preschool-and-kindergarten' ),
+            'section' => 'preschool_and_kindergarten_staff_settings',
+            'type' => 'select',
+            'choices' => $preschool_and_kindergarten_options_posts,
+        )
+    );
+    $wp_customize->add_setting(
+        'preschool_and_kindergarten_staff_post_eight',
+        array(
+            'default' => '',
+            'sanitize_callback' => 'preschool_and_kindergarten_sanitize_select',
+        )
+    );
+    
+    $wp_customize->add_control(
+        'preschool_and_kindergarten_staff_post_eight',
+        array(
+            'label' => __( 'Select Post Eight', 'preschool-and-kindergarten' ),
             'section' => 'preschool_and_kindergarten_staff_settings',
             'type' => 'select',
             'choices' => $preschool_and_kindergarten_options_posts,
