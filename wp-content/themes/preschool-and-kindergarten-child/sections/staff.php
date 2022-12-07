@@ -9,8 +9,13 @@
     $staff_one     = get_theme_mod( 'preschool_and_kindergarten_staff_post_one' );
     $staff_two     = get_theme_mod( 'preschool_and_kindergarten_staff_post_two' );
     $staff_three   = get_theme_mod( 'preschool_and_kindergarten_staff_post_three' );
+    $staff_four   = get_theme_mod( 'preschool_and_kindergarten_staff_post_four' );
+    $staff_five   = get_theme_mod( 'preschool_and_kindergarten_staff_post_five' );
+    $staff_six   = get_theme_mod( 'preschool_and_kindergarten_staff_post_six' );
+    $staff_seven   = get_theme_mod( 'preschool_and_kindergarten_staff_post_seven' );
+    $staff_eight   = get_theme_mod( 'preschool_and_kindergarten_staff_post_eight' );
     
-    $staffs_posts = array( $staff_one, $staff_two, $staff_three );
+    $staffs_posts = array( $staff_one, $staff_two, $staff_three,$staff_four,$staff_five,$staff_six,$staff_seven,$staff_eight );
     $staffs_posts = array_diff( array_unique( $staffs_posts ), array('') );
 ?>
 <section class="our-staff">
