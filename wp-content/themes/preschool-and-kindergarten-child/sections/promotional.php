@@ -17,7 +17,8 @@
         preschool_and_kindergarten_get_section_header( $section_title, $description );
         
         if( $button_link ){ ?>
-		    <a href="<?php echo esc_url( $button_link ); ?>" class="btn-detail"><?php echo esc_html( $button_label ); ?></a>
+		    <a href="<?php echo esc_url( $button_link ); ?>" class="btn-detail">View Details</a>
+		    <!-- <a href="" class="btn-detail"><?php //echo esc_html( $button_label ); ?></a> -->
 	    <?php 
 	    } ?>
 	
