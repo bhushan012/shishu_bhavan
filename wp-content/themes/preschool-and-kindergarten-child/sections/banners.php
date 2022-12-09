@@ -37,7 +37,7 @@
 	                                        <div class="text-holder">
 	                                            <strong class="title"><?php the_title(); ?></strong>
 	                                            <?php the_excerpt(); ?>
-	                                            <a class="btn-enroll" href="<?php the_permalink(); ?>"><?php echo esc_html( $slider_readmore );?></a>
+	                                            <!-- <a class="btn-enroll" href="<?php //the_permalink(); ?>"><?php //echo esc_html( $slider_readmore );?></a> -->
 	                                        </div>
 	                                    </div>
 	                                </div>
