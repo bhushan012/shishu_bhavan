@@ -39,14 +39,14 @@
 				    	$staff_qry->the_post(); ?>
 							<div class="col">
 								<div class="img-holder">
-									<a href="<?php the_permalink(); ?>">
+									<!-- <a href="<?php //the_permalink(); ?>"> -->
 										<?php 
 										if ( has_post_thumbnail() ) {
 											the_post_thumbnail( 'preschool-and-kindergarten-staff-thumb', array( 'itemprop' => 'image' ) ); 
 										}else{
 											preschool_and_kindergarten_get_fallback_svg( 'preschool-and-kindergarten-staff-thumb' );
 										} ?>
-									</a>
+									<!-- </a> -->
 								</div>
 								<div class="text-holder">
 									<strong class="name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
